@@ -10,6 +10,9 @@
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@types/canvas-confetti": "^1.4.2",
+    "@vueuse/core": "^8.6.0",
+    "canvas-confetti": "^1.5.1",
     "firebase": "^9.8.2",
     "vue": "^3.2.25"
   },
