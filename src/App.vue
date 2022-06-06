@@ -1,8 +1,7 @@
 <template>
-  <h1>word</h1>
+  <h1>words</h1>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss"></style>

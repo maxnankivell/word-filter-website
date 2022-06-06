@@ -10,6 +10,7 @@
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "firebase": "^9.8.2",
     "vue": "^3.2.25"
   },
   "devDependencies": {
