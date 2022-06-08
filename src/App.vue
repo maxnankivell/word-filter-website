@@ -43,7 +43,6 @@ import db from "./firestore";
 import { useStorage } from "@vueuse/core";
 import confetti from "canvas-confetti";
 
-// TODO: change to not test
 const allUnlabeledWords = useStorage<string[]>("allUnlabeledWords", []);
 const commonWords = useStorage<string[]>("commonWords", []);
 
@@ -62,7 +61,7 @@ const disabledUndo = ref(false);
 
 onMounted(async () => {
   if (allUnlabeledWords.value.length === 0 && commonWords.value.length === 0) {
-    const docRef = doc(db, "words", "test");
+    const docRef = doc(db, "words", "gLpQZjmVmo1iF8MezN7D");
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
@@ -122,8 +121,7 @@ const save = async () => {
     clickedSave.value = false;
   }, 250);
 
-  // TODO: change to not test
-  await updateDoc(doc(db, "words", "test"), {
+  await updateDoc(doc(db, "words", "gLpQZjmVmo1iF8MezN7D"), {
     allUnlabeledWords: allUnlabeledWords.value,
     commonWords: commonWords.value,
   });
